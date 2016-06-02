@@ -24,3 +24,6 @@ RUN bundle install
 
 # Set the default command to execute when creating a new container
 CMD bundle exec rackup --port 8080 --host 0.0.0.0
+
+# Make http request
+RUN curl http://unicornpoo.herokuapp.com/update/team4-turniptoes/complete
